@@ -1,0 +1,17 @@
+{
+  "name": "mono-pro-ui",
+  "theme": "ui",
+  "version": "0.0.0",
+  "description": "A recreation of the Monokai Pro theme for Atom",
+  "keywords": [
+    "ui",
+    "theme",
+    "monokai",
+    "pro"
+  ],
+  "repository": "https://github.com/Sepshun/mono-pro-ui",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
