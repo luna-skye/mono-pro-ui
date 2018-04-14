@@ -1,7 +1,7 @@
 {
   "name": "mono-pro-ui",
   "theme": "ui",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A recreation of the Monokai Pro theme for Atom",
   "keywords": [
     "ui",
