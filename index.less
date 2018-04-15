@@ -39,3 +39,26 @@
 	background-color: @base-background-color;
 	border: none;
 }
+
+
+// Seamless Project Tree View
+.atom-dock-content-wrapper.left .list-inline.tab-bar.inset-panel .tab {
+	background: transparent;
+	border: none;
+}
+
+// File Tabs
+.tab {
+	.close-icon {
+		color: white !imporatant;
+		opacity: 0;
+		transition: opacity 0.1s ease;
+		cursor: pointer !important;
+		&:hover {
+			color: white !important;
+			opacity: 1 !important;
+		}
+	}
+	&.active .close-icon, &:hover .close-icon { opacity: 0.5; }
+	&.modified .close-icon { opacity: 1; }
+}
