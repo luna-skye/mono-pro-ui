@@ -12,62 +12,65 @@
 
 
 // Text Colors
-@text-color:           hsl(0,0%,55%);
-@text-color-subtle:    hsl(0,0%,45%);
+@text-color          : hsl(0,0%,55%);
+@text-color-subtle   : hsl(0,0%,45%);
 @text-color-highlight: hsl(0,0%,94%);
-@text-color-selected:  hsl(0,0%,100%);
+@text-color-selected : hsl(0,0%,100%);
 
-@text-color-info:    #78DCE8;
-@text-color-success: #A9DC76;
-@text-color-warning: #FFD866;
-@text-color-error:   #FC9867;
+@text-color-info   : #6DCFF9;
+@text-color-success: #B4EF78;
+@text-color-warning: #FFD952;
+@text-color-error  : #FC9867;
+@text-color-pink   : #FF5B79;
+@text-color-purple : #B0A1FF;
 
 // Background colors
-@background-color-info:    hsla(208, 100%, 50%, 0.75);
-@background-color-success: hsla(160,  70%, 36%, 0.75);
-@background-color-warning: hsla(32,   60%, 50%, 0.75);
-@background-color-error:   hsla(0,    70%, 50%, 0.75);
+@background-color-info   : darken(@text-color-info, 30%);
+@background-color-success: darken(@text-color-success, 30%);
+@background-color-warning: darken(@text-color-warning, 30%);
+@background-color-error  : darken(@text-color-error, 30%);
 
-@background-color-highlight: lighten(@base-background-color, 5%);
-@background-color-selected:  lighten(@base-background-color, 10%);
-@app-background-color:       darken(@base-background-color, 5%);
+@background-color-highlight: lighten(@base-background-color, 8%);
+@background-color-selected : lighten(@base-background-color, 10%);
+@app-background-color      : @base-background-color;
 
 // Base colors
-@base-background-color: #221F22;
-@base-border-color:     darken(@base-background-color, 0%);
+@base-background-color        : #191919;
+@base-background-color-lighter: lighten(@base-background-color, 5%);
+@base-border-color            : @base-background-color-lighter;
 
 // Component colors
-@pane-item-background-color: @base-background-color;
-@pane-item-border-color:     @base-border-color;
+@pane-item-background-color    : @base-background-color;
+@pane-item-border-color        : @base-border-color;
 
-@input-background-color: @background-color-highlight;
-@input-border-color:     @base-border-color;
+@input-background-color        : @background-color-highlight;
+@input-border-color            : @base-border-color;
 
-@tool-panel-background-color: @base-background-color;
-@tool-panel-border-color:     @base-border-color;
+@tool-panel-background-color   : @base-background-color;
+@tool-panel-border-color       : @base-border-color;
 
-@inset-panel-background-color: lighten(@base-background-color, 4%);
-@inset-panel-border-color:     @base-border-color;
+@inset-panel-background-color  : lighten(@base-background-color, 4%);
+@inset-panel-border-color      : @base-border-color;
 
 @panel-heading-background-color: lighten(@base-background-color, 4%);
-@panel-heading-border-color:     @base-border-color;
+@panel-heading-border-color    : @base-border-color;
 
-@overlay-background-color: lighten(@base-background-color, 5%);
-@overlay-border-color:     @base-border-color;
+@overlay-background-color      : lighten(@base-background-color, 5%);
+@overlay-border-color          : @base-border-color;
 
-@button-background-color:          lighten(@base-background-color, 10%);
-@button-background-color-hover:    lighten(@button-background-color, 12%);
+@button-background-color         : lighten(@base-background-color, 10%);
+@button-background-color-hover   : lighten(@button-background-color, 12%);
 @button-background-color-selected: @button-background-color-hover;
-@button-border-color:              @base-border-color;
+@button-border-color             : @base-border-color;
 
-@tab-bar-background-color:    @base-background-color;
-@tab-bar-border-color:        @base-border-color;
-@tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: lighten(@tab-bar-background-color, 5%);
-@tab-border-color:            @base-border-color;
+@tab-bar-background-color   : @base-background-color-lighter;
+@tab-bar-border-color       : @base-border-color;
+@tab-background-color       : @tab-bar-background-color;
+@tab-background-color-active: @base-background-color;
+@tab-border-color           : @base-border-color;
 
-@tree-view-background-color: @base-background-color;
-@tree-view-border-color:     @base-border-color;
+@tree-view-background-color: @base-background-color-lighter;
+@tree-view-border-color    : @base-border-color;
 
 // Site colors
 @ui-site-color-1: hsl(208, 100%, 50%); // blue
@@ -77,17 +80,17 @@
 @ui-site-color-5: #EBDD5B;             // yellow
 
 // Sizes
-@font-size: 12px;
+@font-size      : 12px;
 @input-font-size: 14px;
 
 @disclosure-arrow-size: 12px;
 
-@component-padding: 12px;
+@component-padding     : 12px;
 @component-icon-padding: 5px;
-@component-icon-size: 16px;
-@component-line-height: 25px;
+@component-icon-size   : 16px;
+@component-line-height : 25px;
 
-@tab-height: 40px;
+@tab-height: 56px;
 
 // Misc
 @component-border-radius: 0px;

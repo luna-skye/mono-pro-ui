@@ -7,14 +7,37 @@
 
 
 .tree-view-resizer {
-  border-right: 1px solid @base-border-color;
+    border-right: 1px solid @base-border-color;
 }
 
 .tree-view {
-  color: @text-color;
-  background-color: @tree-view-background-color;
+    color: @text-color;
+    background-color: @tree-view-background-color;
 
-  .list-item.selected {
-    color: @text-color-selected;
-  }
+    .entry {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        font-size: 14px;
+        & > * { position: relative; }
+        &.selected      { color: @text-color-selected; }
+        span { transition: color 0.1s ease; }
+
+
+        &::before {
+            height: 29px;
+            margin-top: -2px;
+            background-color: transparent;
+        }
+        &:hover::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            background-color: @background-color-highlight;
+        }
+        &.selected::before {
+            background-color: @background-color-selected;
+        }
+    }
+
 }

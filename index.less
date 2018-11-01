@@ -30,9 +30,7 @@
 ::-webkit-scrollbar-thumb { background-color: hsla(0,0,100%,0.1); }
 
 // Force Input Colors
-.input-checkbox:checked, .input-radio:checked, .input-toggle:checked, input[type=range]::-webkit-slider-thumb {
-	background-color: @text-color-success;
-}
+.input-checkbox:checked, .input-radio:checked, .input-toggle:checked, input[type=range]::-webkit-slider-thumb { background-color: @text-color-warning; }
 
 // Force Alert BG Color
 .settings-view .alert-info {
@@ -45,20 +43,52 @@
 .atom-dock-content-wrapper.left .list-inline.tab-bar.inset-panel .tab {
 	background: transparent;
 	border: none;
+	box-shadow: none;
 }
+.atom-dock-resize-handle.atom-dock-resize-handle-resizable.left { background: @base-background-color-lighter; }
 
-// File Tabs
-.tab {
-	.close-icon {
-		color: white !imporatant;
-		opacity: 0;
-		transition: opacity 0.1s ease;
-		cursor: pointer !important;
-		&:hover {
-			color: white !important;
-			opacity: 1 !important;
-		}
-	}
-	&.active .close-icon, &:hover .close-icon { opacity: 0.5; }
-	&.modified .close-icon { opacity: 1; }
-}
+
+// Dock Button
+.atom-dock-toggle-button .atom-dock-toggle-button-inner { background: @base-background-color-lighter; }
+
+
+// Scrollbar Corner fix
+.scrollbar-corner { display: none; }
+
+
+// File Icons!
+.light-red:before     { color: lighten(#d24b4b, 10%); }
+.medium-red:before    { color: #d24b4b; }
+.dark-red:before      { color: desaturate(darken(#d24b4b, 10%), 40%); }
+
+.light-green:before   { color: lighten(@text-color-success, 10%); }
+.medium-green:before  { color: @text-color-success; }
+.dark-green:before    { color: desaturate(darken(@text-color-success, 10%), 40%); }
+
+.light-yellow:before  { color: lighten(@text-color-warning, 10%); }
+.medium-yellow:before { color: @text-color-warning; }
+.dark-yellow:before   { color: desaturate(darken(@text-color-warning, 10%), 40%); }
+
+.light-blue:before    { color: lighten(@text-color-info, 10%); }
+.medium-blue:before   { color: @text-color-info; }
+.dark-blue:before     { color: desaturate(darken(@text-color-info, 10%), 40%); }
+
+.light-maroon:before  { color: lighten(#da0b92, 10%); }
+.medium-maroon:before { color: #da0b92; }
+.dark-maroon:before   { color: desaturate(darken(#da0b92, 10%), 40%); }
+
+.light-purple:before  { color: lighten(@text-color-purple, 10%); }
+.medium-purple:before { color: @text-color-purple; }
+.dark-purple:before   { color: desaturate(darken(@text-color-purple, 10%), 40%); }
+
+.light-orange:before  { color: lighten(@text-color-error, 10%); }
+.medium-orange:before { color: @text-color-error; }
+.dark-orange:before   { color: desaturate(darken(@text-color-error, 10%), 40%); }
+
+.light-cyan:before    { color: lighten(@text-color-info, 10%); }
+.medium-cyan:before   { color: @text-color-info; }
+.dark-cyan:before     { color: desaturate(darken(@text-color-info, 10%), 40%); }
+
+.light-pink:before    { color: lighten(@text-color-pink, 10%); }
+.medium-pink:before   { color: @text-color-pink; }
+.dark-pink:before     { color: desaturate(darken(@text-color-pink, 10%), 40%); }
