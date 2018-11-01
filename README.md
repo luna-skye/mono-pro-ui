@@ -12,5 +12,5 @@
 <p align="center">For use with the <a href="https://atom.io/themes/mono-pro-syntax">Mono Pro Syntax</a> theme</p>
 
 <p align="center" width="800px">
-  <img src="https://i.imgur.com/VsEHyen.png" alt="preview" />
+  <img src="https://i.imgur.com/tUEF2e5.png" alt="preview" />
 </p>
